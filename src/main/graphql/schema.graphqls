@@ -1,0 +1,13 @@
+type Query {
+    videos(videoIds: [Int]): [Video]
+}
+
+interface Video {
+    videoId: Int
+    title: String
+}
+
+type Movie implements Video {
+    videoId: Int
+    title: String
+}

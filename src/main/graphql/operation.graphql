@@ -1,0 +1,7 @@
+query TestVideo {
+    videos(videoIds: [80119234]) {
+        __typename
+        videoId
+        title
+    }
+}
